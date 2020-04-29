@@ -1,0 +1,52 @@
+
+body{
+  margin:0;
+  padding:0;
+  background: black;
+
+}
+
+.head{
+  color:white;
+  margin:auto;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.container{
+  max-width: 900px;
+  margin:auto;
+  border:#fff solid 2px;
+}
+
+
+.main-img img,
+.imgs img {
+  width: 100%;
+
+}
+
+.imgs img:hover{
+  cursor: pointer;
+}
+
+
+
+.imgs{
+  margin:5px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+@keyframes opacity {
+  to{
+    opacity: 1;
+  }
+
+}
+
+.change{
+  opacity: 0;
+  animation: opacity 0.5s ease-in 1 forwards;
+}
